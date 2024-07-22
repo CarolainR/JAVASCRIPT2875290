@@ -4,14 +4,21 @@ const batman=document.querySelector('.batman');
 const batgirl=document.querySelector('.batgirl');
 const wonderwoman=document.querySelector('.wonderwoman');
 const batimovil=document.querySelector('.batimovil');
+const container=document.querySelector('.container')
 
-function play(e=0){
-    button.play;
+function play(container){
+    if (button.play());
+    container.setAttribute('controls')
+    button.style.innerText=
     superman.play;
     batman.play;
     batgirl.play;
     wonderwoman.play;
     batimovil.play;
+    
+ }
+ else
+ { button.paused()
     console.log ('Ejecutando')
 }
 
