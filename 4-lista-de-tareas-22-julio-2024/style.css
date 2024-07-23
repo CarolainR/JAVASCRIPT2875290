@@ -1,3 +1,23 @@
 body{
-    
+ background-color: rgb(63, 61, 61);   
+}
+.container{
+    background-color: black;
+    color: whitesmoke;
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+}
+.container2{
+    background-color: rgb(193, 22, 228);
+    color: white;
+    width: 300px;
+    height: 500px;
+    margin: auto;
 }

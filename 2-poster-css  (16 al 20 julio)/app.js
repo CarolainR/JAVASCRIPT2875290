@@ -1,30 +1,31 @@
-const button=document.querySelector('.button')
-const superman=document.querySelector('.superman');
-const batman=document.querySelector('.batman');
-const batgirl=document.querySelector('.batgirl');
-const wonderwoman=document.querySelector('.wonderwoman');
-const batimovil=document.querySelector('.batimovil');
-const container=document.querySelector('.container')
+const button = document.querySelector(".button")
+const superman = document.querySelector(".superman");
+const batman = document.querySelector(".batman");
+const batgirl = document.querySelector(".batgirl");
+const wonderwoman = document.querySelector(".wonderwoman");
+const batimovil = document.querySelector(".batimovil");
+const container = document.querySelector(".container")
+let e = 0
 
-function play(container){
-    if (button.play());
-    container.setAttribute('controls')
-    button.style.innerText=
-    superman.play;
-    batman.play;
-    batgirl.play;
-    wonderwoman.play;
-    batimovil.play;
+function play(){
+
+    superman.style.animationPlayState = "running";
+    batman.style.animationPlayState = "running";
+    batgirl.style.animationPlayState = "running";
+    wonderwoman.style.animationPlayState = "running";
+    batimovil.style.animationPlayState= "running";
+    console.log ('TODO ESTA OK')
     
  }
- else
- { button.paused()
+ paused()
+ {
+    superman.style.animationPlayState = "paused";
+    batman.style.animationPlayState = "paused";
+    batgirl.style.animationPlayState = "paused";
+    wonderwoman.style.animationPlayState = "paused";
+    batimovil.style.animationPlayState = "paused";
     console.log ('Ejecutando')
 }
 
 button.addEventListener('click',play)
-superman.addEventListener('click',play)
-batman.addEventListener('click',play)
-batgirl.addEventListener('click',play)
-wonderwoman.addEventListener('click',play)
-batimovil.addEventListener('click',play)
+button.addEventListener('click',paused)
