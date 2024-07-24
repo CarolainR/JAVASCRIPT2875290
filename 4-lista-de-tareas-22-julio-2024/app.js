@@ -26,11 +26,17 @@ const addNewTask = event => {
 const changeTaskState = event => {
     event.target.classList.toggle('done');
 };
-const order= () =>{
+const order = () =>{
     const done = []
     const toDo = []
     tasksContainer.childNodes.forEach( el =>{
         el.classList.contains('done') ? done.push (el) : toDo.push(el)
     })
     return[...toDo, ...done];
-}
+    }
+
+    const renderOrderedTasks = () => {
+        order().forEach(el => tasksContainer.appendChild(el))
+    }
+
+    setDate ();
