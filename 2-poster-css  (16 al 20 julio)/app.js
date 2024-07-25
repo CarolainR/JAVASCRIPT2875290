@@ -1,31 +1,40 @@
-const button = document.querySelector(".button")
-const superman = document.querySelector(".superman");
-const batman = document.querySelector(".batman");
-const batgirl = document.querySelector(".batgirl");
-const wonderwoman = document.querySelector(".wonderwoman");
-const batimovil = document.querySelector(".batimovil");
+// Constantes para cada imagen
+const batimovil = document.getElementById('bm');
+const batgirl = document.getElementById('bg');
+const wonderwoman = document.getElementById('ww');
+const batman = document.getElementById('bm');
+const superman = document.getElementById('sm');
+
 const container = document.querySelector(".container")
-let e = 0
+let animationPaused = true; // Inicialmente está pausada
 
-function play(){
 
-    superman.style.animationPlayState = "running";
-    batman.style.animationPlayState = "running";
-    batgirl.style.animationPlayState = "running";
-    wonderwoman.style.animationPlayState = "running";
-    batimovil.style.animationPlayState= "running";
-    console.log ('TODO ESTA OK')
-    
- }
- paused()
- {
-    superman.style.animationPlayState = "paused";
-    batman.style.animationPlayState = "paused";
-    batgirl.style.animationPlayState = "paused";
-    wonderwoman.style.animationPlayState = "paused";
-    batimovil.style.animationPlayState = "paused";
-    console.log ('Ejecutando')
+//Reproducir la animación
+function playAnimation() {
+  batimovil.classList.add('animate');
+  batgirl.classList.add('animate');
+  wonderwoman.classList.add('animate');
+  batman.classList.add('animate');
+  superman.classList.add('animate');
+  document.getElementById('playButton').textContent = 'PAUSE'; //para cambiar el texto del boton
 }
 
-button.addEventListener('click',play)
-button.addEventListener('click',paused)
+//Pausar la animación
+function pauseAnimation() {
+    batimovil.classList.remove('animate');
+    batgirl.classList.remove('animate');
+    wonderwoman.classList.remove('animate');
+    batman.classList.remove('animate');
+    superman.classList.remove('animate');
+  document.getElementById('playButton').textContent = 'PLAY';
+}
+
+// llamado para el botón PLAY/PAUSE
+document.getElementById('playButton').addEventListener('click', function() {
+  if (animationPaused) {
+    playAnimation();
+  } else {
+    pauseAnimation();
+  }
+  animationPaused = !animationPaused; // Invertir el estado de la animación
+});

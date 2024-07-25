@@ -1,0 +1,88 @@
+
+Para añadir un botón de eliminar a través de JavaScript para cada tarea (task) que se agregue mediante un formulario en HTML, CSS y JavaScript, puedes seguir estos pasos básicos:
+
+Supongamos que tienes un formulario donde se agregan nuevas tareas y cada tarea se muestra en una lista (ul o table, por ejemplo). Aquí te mostraré un ejemplo básico utilizando una lista (ul).
+
+HTML Básico
+html
+Copiar código
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Task Manager</h1>
+  
+  <form id="taskForm">
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul id="taskList">
+    <!-- Tasks will be dynamically added here -->
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+js
+
+
+
+// Obtener referencias a elementos del DOM
+const taskForm = document.getElementById('taskForm');
+const taskInput = document.getElementById('taskInput');
+const taskList = document.getElementById('taskList');
+
+// Manejar el evento de submit del formulario para agregar tareas
+taskForm.addEventListener('submit', function(event) {
+  event.preventDefault(); // Evitar que el formulario se envíe
+  
+  const taskText = taskInput.value.trim(); // Obtener el valor del input y limpiar espacios en blanco
+  
+  if (taskText !== '') {
+    // Crear elementos HTML para la tarea y el botón de eliminar
+    const taskItem = document.createElement('li');
+    taskItem.textContent = taskText;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Eliminar';
+    deleteButton.classList.add('delete-btn');
+    deleteButton.addEventListener('click', function() {
+      taskItem.remove(); // Eliminar la tarea al hacer clic en el botón
+    });
+
+    // Agregar el botón de eliminar a la tarea
+    taskItem.appendChild(deleteButton);
+
+    // Agregar la tarea a la lista
+    taskList.appendChild(taskItem);
+
+    // Limpiar el input después de agregar la tarea
+    taskInput.value = '';
+  }
+});
+
+
+Explicación del JavaScript
+Obtención de referencias: Se obtienen referencias a los elementos importantes del DOM: el formulario (taskForm), el input (taskInput) y la lista (taskList) donde se mostrarán las tareas.
+
+Evento de submit: Se añade un listener al evento submit del formulario (taskForm). Cuando se envía el formulario, se ejecuta una función que previene el comportamiento por defecto (enviar el formulario).
+
+Crear elementos de tarea: Dentro del listener de submit, se obtiene el valor del input (taskInput). Si este valor no está vacío, se crea un nuevo elemento li para la tarea (taskItem).
+
+Botón de eliminar: Se crea un botón (deleteButton) dentro de cada elemento de tarea (taskItem). Este botón tiene un evento click que elimina el elemento li al que pertenece (taskItem).
+
+Agregar tarea a la lista: Se añade el botón de eliminar al elemento de tarea (taskItem) y luego se añade este elemento a la lista (taskList).
+
+Limpiar el input: Finalmente, se limpia el valor del input (taskInput) para prepararlo para la siguiente tarea.
+
+Este es un ejemplo básico y puedes personalizarlo según tus necesidades específicas de diseño y funcionalidad. Puedes agregar estilos CSS adicionales para mejorar la apariencia y el comportamiento de los elementos en tu página web.

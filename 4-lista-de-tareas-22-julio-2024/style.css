@@ -87,22 +87,23 @@ input {
 input:focus {
     outline: none;
 }
-.addTaskButton, .orderButton {
-border: none;
-cursor: pointer; 
-font-weight: bold;
-}
+
 .addTaskButton {
     border-radius: 50%;
     font-size: 15px;
     height: 30px;
     background-color: rgb(0, 0, 0);
     color: white;
+    cursor: pointer; 
+    font-weight: bold;
 
 }
-.orderButton {
+.clean {
     color: rgb(255, 255, 255);
     background-color: blueviolet;
+    border: none;
+    cursor: pointer; 
+    font-weight: bold;
 }
 .task {
     background-color: blueviolet;
@@ -112,6 +113,6 @@ font-weight: bold;
     cursor: pointer;
 }
 .done {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: line-through;
 }
