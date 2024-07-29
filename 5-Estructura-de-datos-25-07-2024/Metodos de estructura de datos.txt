@@ -1,0 +1,9 @@
+foreach() {array.push(), array.lenght}
+filter()
+map()
+(para filtrar información de la base de datos que queramos)
+
+llamar el array con console.log (cancionesRock[0])
+para llamar a un objeto directamente console.log (cancionesRock[0],nombre[0]) //si quiero imprimir la canción 8 y solo su genero seria asi: 
+console.log (cancionesRock[8].genero[8])
+
