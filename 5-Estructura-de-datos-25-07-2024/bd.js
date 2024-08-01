@@ -17,7 +17,7 @@ let cancionesRock = [
         band: 'Led Zeppelin',
         year: 1971,
         genero: 'Rock / Hard Rock',
-        image: 'https://arthive.com/es/artists/10896~Jim_Warren/works/294098~Stairway_to_heaven#show-work://294098'
+        image: 'https://i1.sndcdn.com/artworks-000127380203-93pa4d-t500x500.jpg'
     },
     {
         id: 2,
