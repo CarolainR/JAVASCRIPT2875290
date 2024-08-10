@@ -1,24 +1,22 @@
-const formulario = document.querySelector('.inputsregistro')
-const username = document.querySelector('.registrousername')
-const password = document.querySelector('.registrocode')
-const email = document.querySelector('.email')
-const countrie = document.querySelector('.countrie')
-const phone = document.querySelector('.registrophone')
+//Verificar IDs: Asegúrate de que los IDs de los campos coincidan con los utilizados en el registro.js.
 
-function registro(e) {
-    
-    e.preventDefault();
-    let user = {
-        userName: username.value,
-        userEmail: email.value,
-        userCountrie: countrie.value,
-        userPhone: phone.value,
-        userCode: password.value,
-    }
+const registrationForm = document.getElementById('registrationForm');
 
-    localStorage.setItem('user', JSON.stringify(user))
+registrationForm.addEventListener('submit',function(event) {
+    event.preventDefault();
 
-    formulario.reset();  
-}
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const email = document.getElementById('email').value;
+    const countrie = document.getElementById('countrie').value;
+    const registrophone = document.getElementById('registrophone').value;
 
- formulario.addEventListener('submit', registro) 
+    localStorage.setItem('username', username);
+    localStorage.setItem('password', password);
+    localStorage.setItem('email', email);
+    localStorage.setItem('countrie', countrie);
+    localStorage.setItem('registrophone', registrophone);
+
+    // Redireccion a index.html
+    window.location.href = 'index.html';
+});

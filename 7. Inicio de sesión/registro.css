@@ -30,7 +30,7 @@ h2{
     align-items: center;
     margin-top: 6px;
 }
-.inputsregistro{
+#registrationForm{
     background-image: url(guitarracds.jpg);
     color: white;
     display: flex;
@@ -48,7 +48,7 @@ h2{
     font-size: 20px;
 }
 
-.inputsregistro input{
+#registrationForm input{
     background-color: black;
     color: white;
     margin: 10px;
@@ -62,7 +62,7 @@ h2{
     font-family: 'Franklin Gothic Medium';
     font-size: 15px;
 }
-.btn{
+#btn{
     width: 80px ;
     height: 30px ;
     border-radius: 20%;

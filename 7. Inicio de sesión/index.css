@@ -28,7 +28,7 @@ h2{
     flex-direction: column;
     align-items: center;
 }
-.inputs{
+#loginForm{
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     display: flex;
@@ -46,7 +46,7 @@ h2{
 }
 
 
-.inputs input{
+#loginForm input{
     margin: 5px;
     border: 3px solid rgb(209, 255, 4);
     display: flex;
@@ -69,7 +69,7 @@ input[type=password]{
     margin-bottom: 100px;
 }
 
-.submit{
+#submit{
     width: 80px ;
     height: 30px ;
     border-radius: 20%;
