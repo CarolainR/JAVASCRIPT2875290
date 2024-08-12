@@ -1,4 +1,6 @@
 const loginForm = document.getElementById('loginForm');
+const username = document.querySelector('#username');
+const password = document.querySelector('#password');
 
 loginForm.addEventListener('submit', function(event) {
     event.preventDefault();

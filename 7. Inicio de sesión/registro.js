@@ -1,6 +1,9 @@
 //Verificar IDs: Asegúrate de que los IDs de los campos coincidan con los utilizados en el registro.js.
 
 const registrationForm = document.getElementById('registrationForm');
+const username = document.querySelector('#username')
+const password = document.querySelector('#password')
+
 
 registrationForm.addEventListener('submit',function(event) {
     event.preventDefault();
