@@ -1,0 +1,74 @@
+body{
+ background-color: rgb(248, 6, 6);
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Open Sans', sans-serif;
+ height: 440px;
+ align-items: center;
+ text-align: center;
+ flex-direction: row;
+}
+.container{
+    width: 100%;
+    color: white;
+    border-radius: 5%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+
+}
+.contenedor{
+    background-color: rgb(255, 251, 0);
+}
+.box{
+    width: 30%;
+    background-color: black;  
+    display: flex;
+ /*    flex-grow: 1; */
+    margin: 10px;
+    padding: 2px;
+    cursor: pointer;
+    border: 2px solid white; 
+} 
+h1{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    width: 300px;
+    height: 120px;
+    margin: auto;
+}
+.image{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+/* .columna image{
+    height: calc(100%-XXpx);
+}
+.image.cover{
+object-fit: cover;
+} */
+.nombre{
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium';
+    width: 200px;
+}
+.banda{
+    color: white;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium';
+}
+.año{
+    color: white;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium';
+}
+.genero{
+    color: white;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium';
+}
