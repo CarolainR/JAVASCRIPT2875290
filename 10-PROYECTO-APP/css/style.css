@@ -1,0 +1,88 @@
+body {
+    background-image: url("../sources/FONDO\ 3\ NUBES\ CON\ RUIDOO.jpg");
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-image: url("../sources/FONDO\ 1\ \ DEGRADADO\ GAUSSIANO\ PARA\ MOOC\ SOULMIA\ EN\ JPG.jpg");
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.burgerMenu{
+    color: white;
+    width: 80px;
+}
+.sectionRight{
+    display: flex;
+    justify-content: right;
+    margin-right: 190px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+/*     text-decoration-line: underline;
+    text-decoration-color: white; */
+   
+}
+.logo{
+    width: 60px;
+    height:60px ;
+}
+.nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+.nav a:hover {
+    background-color: #555;
+}
+.searchBar {
+    margin: 20px;
+    text-align: center;
+    
+}
+.searchBar input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5%;
+    border-color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
