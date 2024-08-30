@@ -9,23 +9,21 @@ body {
 }
 .header {
     background-image: url("../sources/FONDO\ 1\ \ DEGRADADO\ GAUSSIANO\ PARA\ MOOC\ SOULMIA\ EN\ JPG.jpg");
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     font-family:'Franklin Gothic Medium';
     
 }
-
+.logo{
+    width: 100px;
+    height:100px ;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+}
 h1{
     color: white;
     text-shadow: 2px 2px black;
     font-family:'Franklin Gothic Medium';
     
-}
-.burgerMenu{
-    color: white;
-    width: 200px;
-    cursor: pointer;
-    font-family:'Franklin Gothic Medium';
 }
 .sectionRight{
     display: flex;
@@ -35,40 +33,11 @@ h1{
     margin-left: 50px;
     font-family:'Franklin Gothic Medium';
 }
-
-.nav {
-    display: flex;
-    justify-content: center;
-    margin-left: 200px;
-    align-items: center;
-    border: 10px;
-    font-size:large;
-    font-family: 'Franklin Gothic Medium';
-}
-
-.navBar{
-    text-decoration-line: underline;
-    text-decoration-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.burgerMenu{
+    color: white;
+    width: 200px;
+    cursor: pointer;
     font-family:'Franklin Gothic Medium';
-  
-}
-.logo{
-    width: 100px;
-    height:100px ;
-    box-shadow: 0px 8px 16px 0px #b30af7;
-}
-.nav a {
-    color: #fff;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: block;
-    font-family:'Franklin Gothic Medium';
-}
-.nav a:hover {
-    background-color: #b30af7;
 }
 .searchBar {
     margin: 20px;
@@ -116,10 +85,6 @@ h1{
 .dropdown:hover .dropdownContent {
     display: block;
 }
-
-
-
-
 /* menú desplegable del perfil */
 .profileMenu{
     position: relative;
@@ -155,51 +120,6 @@ h1{
     color: white;
     font-family:'Franklin Gothic Medium';
     
-}
-/* imagen Promocion */
-.imgPromotion{
-    width:80%;
-    max-width: 600px;
-    height: auto;
-    overflow: hidden;
-    display: grid;
-    padding: auto;
-    margin: auto;
-    box-sizing: border-box; /*Incluye padding y border en el ancho total*/
-    border: 3px solid black;
-    
-    justify-content: center;
-    align-items: center;
-    /* position: absolute; */
-.imgProm{
-    height:auto;
-    width: 100%;
-} 
-}
-/* div nuestros aliados*/
-.nuestros{
-    text-align: center;
-    color: white;
-    font-family: 'Franklin Gothic Medium';
-    font-size:large;
-    margin: 0;
-    font-family:'Franklin Gothic Medium';
-}
-.aliados{
-    width: 1330px;
-    height: 100px;
-    margin-bottom: 40px;
-    border: 3px solid black;
-    background-color: #000000;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-.imagen{
-width: 80px;
-margin: 40px;
 }
 /* FOOTER*/
 .footer {
@@ -262,4 +182,109 @@ margin: 40px;
     display: flex;
     flex-direction: row;
   } */
- 
+
+ /*  h2{
+    font-family: 'Franklin Gothic Medium';
+    font-size: xx-large;
+    text-align: center;
+    background-color: #b30af7;
+    width: 200px;} */
+  
+  .biblioteca{
+    font-family: 'Franklin Gothic Medium';
+    font-size: xx-large;
+    text-align: center;
+    background-color: #5B043E;
+    width: 180px;
+    border-style:solid;
+    border-color: #000000;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    margin: auto;
+  }
+  .pdfs{
+    font-family: 'Franklin Gothic Medium';
+    font-size: xx-large;
+    text-align: center;
+    background-color: #5B043E;
+    width: 90px;
+    border-style:solid;
+    border-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    color: white;
+  /*   margin: auto; */
+  }
+  .podcast{
+    font-family: 'Franklin Gothic Medium';
+    font-size: xx-large;
+    text-align: center;
+    background-color: #5B043E;
+    width: 150px;
+    border-style:solid;
+    border-radius: 5px;
+    border-color: #000000;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    color: white;
+    /* margin: auto; */
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: repeat(7, auto); /* Siete filas de altura automática */
+    gap: 10px; /* Espacio entre celdas */
+    padding: 20px; /* Espacio interno opcional */
+}
+
+/* Estilo para las columnas */
+.column {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+}
+
+.row {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos dentro de la fila */
+    justify-content: space-between; /* Espacio entre la imagen, el texto y los iconos */
+    /* border: 1px solid #ccc; /* Opcional: Agrega un borde para ver las celdas */
+    padding: 10px; 
+}
+
+.row img {
+    width: 60px; /* Ajusta el tamaño de la imagen */
+    height: 60px; /* Ajusta el tamaño de la imagen */
+}
+
+.icons {
+    display: flex;
+    gap: 5px; /* Espacio entre los iconos */
+    box-shadow: 0px 8px 16px 0px #b30af7;
+}
+
+.icons i {
+    font-size: 20px; /* Ajusta el tamaño del icono */
+}
+.pdfTitle{
+    font-family: 'Franklin Gothic Medium';
+    font-size: xx-large;
+    text-align: center;
+    background-color: #5B043E;
+    width: 180px;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    margin: auto;
+}
+.imgsColumns{
+    box-shadow: 0px 8px 16px 0px #b30af7;
+}
+p{
+    text-decoration: underline;
+    color: white;
+    font-size:medium;
+}
