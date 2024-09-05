@@ -29,19 +29,19 @@ h1{
 }
 .sectionRight{
     display: flex;
-    justify-content: right;
-    margin-right: 190px;
-    margin-top: 10px;
-    margin-left: 50px;
     font-family:'Franklin Gothic Medium';
+    font-size: 25px ;
+    gap: 7px ;
 }
 
 .nav {
+    justify-content: space-around;
     display: flex;
-    justify-content: center;
-    margin-left: 200px;
+    gap: 10px;
+    margin: auto;
+    width: 90%;
     align-items: center;
-    border: 10px;
+    justify-content: space-around;
     font-size:large;
     font-family: 'Franklin Gothic Medium';
 }
@@ -53,7 +53,7 @@ h1{
     justify-content: center;
     align-items: center;
     font-family:'Franklin Gothic Medium';
-  
+    margin-right: 3%;
 }
 .logo{
     width: 100px;
@@ -63,8 +63,8 @@ h1{
 .nav a {
     color: #fff;
     padding: 14px 20px;
-    text-decoration: none;
-    display: block;
+    margin-left: 1%;
+    display: flex;
     font-family:'Franklin Gothic Medium';
 }
 .nav a:hover {

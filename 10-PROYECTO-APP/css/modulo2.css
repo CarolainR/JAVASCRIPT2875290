@@ -7,6 +7,24 @@ body {
     position: relative;
   
 }
+.header {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium';
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    
+}
+h1{
+    color: rgb(11, 223, 238);
+    background-color: black;
+    text-shadow: 2px 2px black;
+    font-family:'Franklin Gothic Medium';
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    
+}
 .logo{
     width: 100px;
     height:100px ;
@@ -70,6 +88,7 @@ body {
 .burgerMenu{
     color: white;
     cursor: pointer;
+    width: 200px;
     font-family:'Franklin Gothic Medium';
 }
 .dropdown {
@@ -144,151 +163,93 @@ body {
     text-align: center;
 }
 
-
-.aliados{
-    width: 1330px;
-    height: 100px;
-    margin-bottom: 40px;
-    border: 3px solid black;
-    background-color: #000000;
-    overflow: hidden;
-    display: flex;
+.videoorigen{
     justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-.imagen{
-    width: 80px;
-    margin: 40px;
-    }
-
-.divRegistro{
-    background-color: #5B043E;
-    width: 50%;
-    padding: 100px;
     margin: auto;
-    box-shadow: 0px 8px 16px 0px #b30af7;
-}
-.checkBox{
-    margin: right;
-    padding:15px ;
-    flex-direction: row;
-    background-color: white;
-    box-shadow: 0px 8px 16px 0px #b30af7;
-      
+    width: 900px;
+    height: 500px;
+    border-radius: 1%;
+     box-shadow: 0px 8px 16px 0px #0aebf7;
+     margin-bottom: 5%;
+     margin-top: 3%;
+     border: 7px solid #000000; 
     }
-    
-    .correo{
-        padding: 15px;
-        width: 300px;
-        display: flex;    
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .contraseña{
-        padding: 15px;
-        width: 300px;
-        display: flex;    
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .nombreCom{
-        padding: 15px;
-        width: 300px;
-        display: flex;    
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .Nick{
-        padding: 15px;
-        display: flex;   
-        width: 300px; 
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .confirmarContra{
-        padding: 15px;
-        display: flex;   
-        width: 300px; 
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .pais{
-        padding: 15px;
-        width: 300px;
-        display: flex;    
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .ciudad{
-        padding: 15px;
-        width: 300px;
-        display: flex;    
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .profesion{
-        padding: 15px;
-        width: 300px;
-        display: flex;    
-        margin-top: 2%;
-        border: 3px solid black;
-    }
-    .checkbox{
-        width: 80%;
-        margin-left: 20px;
-        margin-top: 7%;
-    }
-    .inputss{
-        width: 650px;
-    display: flex;
-    flex-direction: row;
-   justify-content: center;
-       
-    }
-    .btn{
-        display: block;
-        margin:auto;
-        margin-right: 5%;
-        width: 30%;
+    .videoContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding: 10px;
-        background-color: #ffffff;
-        color: #000000;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 2px 2px black;
-        text-align: center;
-        margin-top: 15%;
+        flex-direction: column;
     }
-    .btnGoogle{
-        display: block;
-        margin:auto;
-        width: 30%;
-        padding: 10px;
-        background-color: #ffffff;
-        color: #000000;
-        border: none;
-        border-radius: 4px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 2px 2px black;
-        text-align: center; /* Centra el texto dentro del botón */
+    h3{
+        color: white;
     }
 
-    #olvide{
-        margin: auto;
-        width: 400px;
-    }
-    .bienvenidoo{
-        text-shadow:  3px 3px 3px #000000;
-        color: white;
-        font-size: 50px;
-        text-align: center;
-    }
+
+
+
+/* div de examen */
+.containerExam{
+    border: 3px solid black;
+    width: 800px;
+    padding: 20px;
+    background-image: url(../sources/FONDO\ 2\ LIQUIDO\ LICUADO.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    margin: auto;
+    margin-bottom: 8%;
+}
+.question {
+    margin-bottom: 20px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+label {
+    font-size: 16px;
+}
+.submit-button {
+    display:block;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #600035;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: fantasy;
+    align-self: flex-end; 
+    
+}
+.submit-button:hover {
+    background-color: #c70dff;
+}
+.parrafoExam{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 /* FOOTER*/
 .footer {
     /* position:unset ; este es el que siempre tendra mi footer abajo */
@@ -338,6 +299,4 @@ body {
     justify-content: space-around;
     margin: 0;
     font-family:'Franklin Gothic Medium';
-    
-    
 }

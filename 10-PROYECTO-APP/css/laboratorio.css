@@ -40,15 +40,16 @@ body {
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
+    justify-content: space-around;
    
     font-size:large;
     font-family: 'Franklin Gothic Medium';
 }
 .sectionRight{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: right;
     font-family:'Franklin Gothic Medium';
+    font-size: 25px ;
+    gap: 25px ;
 }
 .burgerMenu{
     color: white;
@@ -120,6 +121,43 @@ body {
     color: white;
     font-family:'Franklin Gothic Medium';
     margin: auto;
+}
+.iconsLab{
+    display: flex;
+    margin: auto;
+    font-size: 60px;
+    justify-content: center;
+}
+.parrafoo{
+    text-align:justify;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.contenedordeLaboratorio{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border: 3px solid black;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    justify-content: center;
+    font-size: 50px;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    padding: 8%;
+    text-shadow: #dc0569;
+}
+h1{
+    text-shadow:  3px 3px 3px #ffffff;
+ 
+}
+h3{
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 /* FOOTER*/
 .footer {
