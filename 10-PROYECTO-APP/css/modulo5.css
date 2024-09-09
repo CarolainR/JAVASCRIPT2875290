@@ -8,7 +8,7 @@ body {
   
 }
 .header {
-    background-color: black;
+    background-color: rgb(237, 228, 228);
     padding: 10px;
     text-align: center;
     font-family:'Franklin Gothic Medium';
@@ -16,8 +16,8 @@ body {
     
 }
 h1{
-    color: rgb(249, 245, 12);
-    background-color: black;
+    color: rgb(242, 12, 12);
+    background-color: rgb(255, 255, 255);
     text-shadow: 2px 2px black;
     font-family:'Franklin Gothic Medium';
     text-align: center;
@@ -219,10 +219,62 @@ label {
     text-align: center;
 }
 
+/* contenedor formatos */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 3px solid black;
+    background-color: #5B043E;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px; /* Espacio entre los elementos */
+    margin-bottom: 20px; /* Espacio debajo de cada fila */
+    margin-top: 20px;
+}
+.pdfContainer {
+    flex: 1;
+    min-width: 200px; /* Asegura que el contenido no sea demasiado pequeño en pantallas pequeñas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #020202;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px 0px #b30af7;
+    padding: 10px;
+}
 
 
+iframe {
+    flex: 1;
+    max-width: 100%;
+    border: 2px solid #000000;
+}
+a{
+    color: white;
+    text-align: center;
+}
+a:visited {
+    color: #000000; /* Cambia el color de los enlaces visitados a morado */
+}
 
+a:hover {
+    color: #FF0000; /* Cambia el color del enlace cuando se pasa el ratón sobre él a rojo */
+}
 
+a:active {
+    color: #a706f7; /* Cambia el color del enlace cuando se está haciendo clic en él a verde */
+}
 
 
 

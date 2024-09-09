@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>REGISTRO</title>
     <link rel="icon" type="image/x-icon" href="../sources/favicon.ico">
+     <!-- Google Sign-In Library -->
+     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </head>
 
 </head>
 <body>
@@ -17,14 +20,14 @@
     <div class="nav">
        <div class="navBar">
         <img class="logo" src="../sources/LOGO SOULMIA DEFINITIVO_Mesa de trabajo 1.jpg" alt="Logo Soulmia">
-        <a  href="#modulos">Módulos</a>
-        <a  href="#biblioteca">Biblioteca</a>
-        <a  href="#profesores">Profesores</a>
-        <a  href="#calificaciones">Calificaciones</a>
-        <a  href="#videojuego">Videojuego</a>
-        <a  href="#envivos">En Vivos</a>
-        <a  href="#laboratorio">Laboratorio</a>
-        <a  href="#tienda">Tienda</a>
+        <a  href="./modulos.html">Módulos</a>
+        <a  href="./biblioteca.html">Biblioteca</a>
+        <a  href="./profesores.html">Profesores</a>
+        <a  href="./calificaciones.html">Calificaciones</a>
+        <a  href="./videojuego.html">Videojuego</a>
+        <a  href="./envivos.html">En Vivos</a>
+        <a  href="./laboratorio.html">Laboratorio</a>
+        <a  href="./tienda.html">Tienda</a>
         </div>
 
 
@@ -32,14 +35,14 @@
             <div class="dropdown">
                 <span class="burgerMenu" onclick="toggleMenu()">&#9776;</span>
                 <div id="dropdownContent" class="dropdownContent">
-                <a href="modulos">Módulos</a>
-                <a href="#biblioteca">Biblioteca</a>
-                <a href="#profesores">Profesores</a>
-                <a href="#calificaciones">Calificaciones</a>
-                <a href="#videojuego">Videojuego</a>
-                <a href="#envivos">En Vivos</a>
-                <a href="#laboratorio">Laboratorio</a>
-                <a href="#tienda">Tienda</a>
+                <a href="./modulos.html">Módulos</a>
+                <a href="./biblioteca.html">Biblioteca</a>
+                <a href="./profesores.html">Profesores</a>
+                <a href="./calificaciones.html">Calificaciones</a>
+                <a href="./videojuego.html">Videojuego</a>
+                <a href="./envivos.html">En Vivos</a>
+                <a href="./laboratorio.html">Laboratorio</a>
+                <a href="./tienda.html">Tienda</a>
                 </div>
             </div>
 
@@ -49,8 +52,8 @@
                     <i class="fas fa-user"></i>
                 </span>
                 <div id="profileMenuContent" class="profileMenuContent">
-                    <a href="#login" aria-label="Ir a Login">Login</a>
-                    <a href="#registro" aria-label="Ir a Registro">Registro</a>
+                    <a href="./login.html" aria-label="Ir a Login">Login</a>
+                    <a href="./registro.html" aria-label="Ir a Registro">Registro</a>
                 </div>
             </div>
 
@@ -62,28 +65,29 @@
     
     <div class="divRegistro">
         <span><h1 class="bienvenidoo">¡ REGISTRATE !</h1></span>
-        <button class="btnGoogle">Continuar con Google</button>
+         <!-- Google Sign-In Button -->
+         <div class="g-signin2" data-onsuccess="onSignIn"><button class="btnGoogle">Continuar con Google</button>
+         </div>
 
         <div class="inputss">
             <div>
-                <input class="nombreCom" type="text" placeholder="Nombre Completo">
-                <input class="correo" type="text" placeholder="correo electronico">
-                <input class="contraseña" type="text" placeholder="contraseña">
-                <input class="confirmarContra" type="text" placeholder="confirmarContra">
-                <div class="checkbox">  
-                    <input  class="checkBox" type="checkbox"> <a id="olvide" href="">Acepto Terminos y Condiciones</a> 
+                <input id="fullName" class="nombreCom" type="text" placeholder="Nombre Completo">
+                <input id="email" class="correo" type="text" placeholder="Correo Electrónico">
+                <input id="password" class="contraseña" type="password" placeholder="Contraseña">
+                <input id="confirmPassword" class="confirmarContra" type="password" placeholder="Confirmar Contraseña">
+                <div class="checkbox"> 
+                    <input  class="checkBox" type="checkbox"> <a id="olvide" href="./terminosycondiciones.html">Acepto Terminos y Condiciones</a> 
                     <br>
-                    <input  class="checkBox" type="checkbox"> <a id="olvide" href="">Acepto Politicas de Privacidad</a>
+                    <input  class="checkBox" type="checkbox"> <a id="olvide" href="./politicasdeprivacidad.html">Acepto Politicas de Privacidad</a>
                 </div>
             </div>
             <div>
-                <input class="Nick" type="text" placeholder="Nick">
-                <input class="pais" type="text" placeholder="país">
-                <input class="ciudad" type="text" placeholder="Ciudad">
-                <input class="profesion" type="text" placeholder="Profesión y/Cargo">
-                <button class="btn">
-                    Registro
-                </button>
+                <input id="nickname" class="Nick" type="text" placeholder="Nick">
+                <input id="country" class="pais" type="text" placeholder="País">
+                <input id="city" class="ciudad" type="text" placeholder="Ciudad">
+                <input id="profession" class="profesion" type="text" placeholder="Profesión y/Cargo">
+
+                <button id="registerBtn" class="btn">Registro</button>
             </div>
     </div>
     </div>
@@ -104,11 +108,11 @@
     <!-- ..................footer.................... -->
 <footer class="footer">
     <div class="linksFooter">
-    <a href="../vistas/encuestadesatisfaccion.html" class="footerLink">Encuesta de Satisfacción</a>
-    <a href="../vistas/terminosycondiciones.html" class="footerLink">Terminos y Condiciones</a>
-    <a href="../vistas/politicasdeprivacidad.html" class="footerLink">Politicas de Privacidad</a>
-    <a href="../vistas/sobrenosotros.html" class="footerLink">Sobre Nosotros</a>
-    <a href="../vistas/pqr.html" class="footerLink">PQR</a>
+    <a href="./encuestadesatisfaccion.html" class="footerLink">Encuesta de Satisfacción</a>
+    <a href="./terminosycondiciones.html" class="footerLink">Terminos y Condiciones</a>
+    <a href="./politicasdeprivacidad.html" class="footerLink">Politicas de Privacidad</a>
+    <a href="./sobrenosotros.html" class="footerLink">Sobre Nosotros</a>
+    <a href="./pqr.html" class="footerLink">PQR</a>
     </div>
     
     <div class="iconsBrands">
@@ -131,6 +135,6 @@
     <p id="endFooter">&copy; Since 2024</p>
     </div>
 </footer>
-  
+  <script src="../js/registro.js"></script>
 </body>
 </html>

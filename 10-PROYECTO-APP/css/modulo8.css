@@ -8,7 +8,8 @@ body {
   
 }
 .header {
-    background-image: url("../sources/FONDO\ 1\ \ DEGRADADO\ GAUSSIANO\ PARA\ MOOC\ SOULMIA\ EN\ JPG.jpg");
+    background-color: #0000FF;
+    color: white;
     padding: 10px;
     text-align: center;
     font-family:'Franklin Gothic Medium';
@@ -152,34 +153,86 @@ h1{
     font-family:'Franklin Gothic Medium';
     margin: auto;
 }
-.nuestros{
+
+.titulo {
+    font-size: 24px;
+    color: #0000FF; /* Azul */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px 0px #4d4dff;
+    text-align: center;
+    width: 11%;
+    padding: 15px;
+    background-color: #000000;
+    margin: auto;
+}
+.subtitulo {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    background-color: rgb(68, 13, 232);
+    color: #ffffff;
+    width: 11%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0px 8px 16px 0px #4d4dff;
+}
+.contenido {
+    margin-bottom: 2%;
+    margin: auto;
+    border: 8px solid black;
+    width: 60%;
+    justify-content: space-between;
+    height: 200px;
+}
+
+p {
+    margin-bottom: 50px;
     color: white;
-    text-shadow:  3px 3px 3px #000000;
     text-align: center;
 }
-
-
-.aliados{
-    width: 1330px;
-    height: 100px;
-    margin-bottom: 40px;
-    border: 3px solid black;
-    background-color: #000000;
-    overflow: hidden;
+.botones {
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-.imagen{
-    width: 80px;
-    margin: 40px;
-    }
-.titulo{
-        text-align: center;
-        font-size: 60px;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 
+.boton {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.btnIzq{
+    background-color: rgb(68, 13, 232);
+    color: #ffffff;
+}
+
+.btnDer {
+    background-color: rgb(68, 13, 232);
+    color: #ffffff;
+    margin: auto;
+}
+
+.file-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 4%;
+}
+
+.file-input input[type="file"] {
+    margin-right: 10px;
+}
+.fileInput{
+    width: 230px;
+    background-color: rgb(68, 13, 232);
+    color: #ffffff;
+   display: flex;
+}
 
 
 
@@ -198,6 +251,7 @@ h1{
     text-align: center;
     align-items: center;
     font-family:'Franklin Gothic Medium';
+    margin-top: 2%;
     
   }
 
