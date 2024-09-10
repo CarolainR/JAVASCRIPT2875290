@@ -148,6 +148,14 @@ body {
     text-shadow:  3px 3px 3px #000000;
     text-align: center;
 }
+.bienvenidoo{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    box-shadow: 3px solid black;
+    color: #ffffff;
+    text-shadow: 2px #ffffff;
+    font-size: 50px;
+}
 
 
 .aliados{
@@ -167,13 +175,13 @@ body {
     margin: 40px;
     }
 
-.divRegistro{
+ .divRegistro{
     background-color: #5B043E;
     width: 50%;
     padding: 100px;
     margin: auto;
     box-shadow: 0px 8px 16px 0px #b30af7;
-}
+} 
 .checkBox{
     margin: right;
     padding:15px ;
@@ -269,58 +277,12 @@ body {
         text-align: center;
         margin-top: 15%;
     }
-    .btnGoogle{
-        display: block;
-        margin:auto;
-        width: 90%;
-        padding: 10px 20px;
-        background-color: #700464;
-        color: #000000;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 2px 2px black;
-        text-align: center;
-    }
-
-    .g-signin2 {
-        display: block;
-        margin:  auto;
-        width: 30%;
-        background-color: #700464;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        padding: 10px 10px;
-        font-size: 16px;
-        cursor: pointer;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 2px 2px black;
-        text-align: center;
-       
-       
-        text-align: center;
-    }
-.btn:hover, .g-signin2:hover {
-    background-color: #357ae8;
-}
-
-.btn:active, .g-signin2:active {
-    background-color: #3367d6;
-}
-
-    #olvide{
+ 
+ #olvide{
         margin: auto;
         width: 400px;
     }
-    .bienvenidoo{
-        text-shadow:  3px 3px 3px #000000;
-        color: white;
-        font-size: 50px;
-        text-align: center;
-    }
+
 /* FOOTER*/
 .footer {
     /* position:unset ; este es el que siempre tendra mi footer abajo */
@@ -365,11 +327,9 @@ body {
 
   }
 /* estilo para INFOFOOTER*/
+
 .infoFooter{
     display: flex;
     justify-content: space-around;
     margin: 0;
-    font-family:'Franklin Gothic Medium';
-    
-    
-}
+    font-family:'Franklin Gothic Medium'}
