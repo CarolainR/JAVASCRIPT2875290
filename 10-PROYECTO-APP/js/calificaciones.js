@@ -1,27 +1,3 @@
-document.getElementById('registerBtn').addEventListener('click', function() {
-    const fullName = document.getElementById('fullName').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
-    
-    // Validación simple
-    if (password !== confirmPassword) {
-        alert('Las contraseñas no coinciden.');
-        return;
-    }
-
-    // Guardar datos en localStorage
-    localStorage.setItem('user', JSON.stringify({
-        fullName: fullName,
-        email: email,
-        password: password
-    }));
-    
-    alert('Registro exitoso');
-    window.location.href = './login.html'; // Redirigir al login después del registro
-});
-
-
 // greeting user
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -58,10 +34,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const username = document.getElementById('username').value;
     const email = document.getElementById('email').value;
     
-    // Guardar información en localStorage
+    // Guardar información del usuario en localStorage
     localStorage.setItem('loggedIn', 'true');
     localStorage.setItem('user', JSON.stringify({ username, email }));
     
-    // Redirigir 
+    // Redirigir al usuario a la página principal o donde desees
     window.location.href = './index.html';
 });
