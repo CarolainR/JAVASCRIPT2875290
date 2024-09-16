@@ -10,45 +10,41 @@
 
 </head>
 <body>
+                <!-- saludo logeado -->
+
+                <div class="greeting" id="greeting" style="display: none;">
+                    <span id="welcomeMessage">Bienvenido/a, </span>
+                    <span id="username"></span>
+                </div>
     <div class="header">
-            <!-- saludo logeado -->
-
-    <div class="greeting" id="greeting" style="display: none;">
-        <span id="welcomeMessage">Bienvenido/a, </span>
-        <span id="username"></span>
-    </div>
         <h1>🍸MODULO 5🍸</h1>
-    </div>
-
-    <div class="searchBar">
-        <input type="text" placeholder="Buscar">
     </div>
 
     <div class="nav">
         <div class="navBar">
         <img class="logo" src="../sources/LOGO SOULMIA DEFINITIVO_Mesa de trabajo 1.jpg" alt="Logo Soulmia">
-        <a  href="#modulos">Módulos</a>
-        <a  href="#biblioteca">Biblioteca</a>
-        <a  href="#profesores">Profesores</a>
-        <a  href="#calificaciones">Calificaciones</a>
-        <a  href="#videojuego">Videojuego</a>
-        <a  href="#envivos">En Vivos</a>
-        <a  href="#laboratorio">Laboratorio</a>
-        <a  href="#tienda">Tienda</a>
+        <a  href="../vistas/modulos.html">Módulos</a>
+        <a  href="./biblioteca.html">Biblioteca</a>
+        <a  href="../vistas/profesores.html">Profesores</a>
+        <a  href="./calificaciones.html">Calificaciones</a>
+        <a  href="./videojuego.html">Videojuego</a>
+        <a  href="./envivos.html">En Vivos</a>
+        <a  href="./laboratorio.html">Laboratorio</a>
+        <a  href="./tienda.html">Tienda</a>
         </div>
 
         <div class="sectionRight">
             <div class="dropdown">
                 <span class="burgerMenu" onclick="toggleMenu()">&#9776;</span>
                 <div id="dropdownContent" class="dropdownContent">
-                <a href="modulos">Módulos</a>
-                <a href="#biblioteca">Biblioteca</a>
-                <a href="#profesores">Profesores</a>
-                <a href="#calificaciones">Calificaciones</a>
-                <a href="#videojuego">Videojuego</a>
-                <a href="#envivos">En Vivos</a>
-                <a href="#laboratorio">Laboratorio</a>
-                <a href="#tienda">Tienda</a>
+                <a href="../vistas/modulos.html">Módulos</a>
+                <a href="../vistas/biblioteca.html">Biblioteca</a>
+                <a href="../vistas/profesores.html">Profesores</a>
+                <a href="../vistas/calificaciones.html">Calificaciones</a>
+                <a href="../vistas/videojuego.html">Videojuego</a>
+                <a href="../vistas/envivos.html">En Vivos</a>
+                <a href="../vistas/laboratorio.html">Laboratorio</a>
+                <a href="../vistas/tienda.html">Tienda</a>
                 </div>
             </div>
              <!-- Menú desplegable de perfil -->
@@ -57,8 +53,8 @@
                     <i class="fas fa-user"></i>
                 </span>
                 <div id="profileMenuContent" class="profileMenuContent">
-                    <a href="#login" aria-label="Ir a Login">Login</a>
-                    <a href="#registro" aria-label="Ir a Registro">Registro</a>
+                    <a href="../vistas/login.html" aria-label="Ir a Login">Login</a>
+                    <a href="./index.html" id="logoutBtn" aria-label="Ir a logout">logout</a>
                 </div>
             </div>
         </div>
@@ -73,6 +69,7 @@
   <img src="../sources/MixologiaM.jpg" alt="">
 
   <h1>FORMATOS (PDF,ECXEL, WORD, JPG)</h1>
+  <br>
   <div class="container">
     <div class="row">
         <div class="pdfContainer">
@@ -400,9 +397,9 @@ Inventarios
 
     <footer class="footer">
         <div class="linksFooter">
-        <a href="" class="footerLink">Encuesta de Satisfacción</a>
-        <a href="" class="footerLink">Terminos y Condiciones</a>
-        <a href="" class="footerLink">Politicas de Privacidad</a>
+        <a href="../vistas/encuestadesatisfaccion.html" class="footerLink">Encuesta de Satisfacción</a>
+        <a href="../vistas/terminosycondiciones.html" class="footerLink">Terminos y Condiciones</a>
+        <a href="../vistas/politicasdeprivacidad.html" class="footerLink">Politicas de Privacidad</a>
         <a href="" class="footerLink">Sobre Nosotros</a>
         <a href="" class="footerLink">PQR</a>
         </div>
@@ -427,6 +424,6 @@ Inventarios
         <p id="endFooter">&copy; Since 2024</p>
         </div>
     </footer>
-    <script src="./js/app.js"></script>
+    <script src="../js/modulo5.js"></script>
 </body>
 </html>

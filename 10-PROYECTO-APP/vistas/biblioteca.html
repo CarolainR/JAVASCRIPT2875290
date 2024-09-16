@@ -12,14 +12,14 @@
 <body>
     <div class="header">
         <div class="greeting" id="greeting" style="display: none;">
-            <span id="welcomeMessage">Bienvenido/a, </span>
+            <span id="welcomeMessage">Bienvenido, </span>
             <span id="username"></span>
         </div>
         <h1>🍸📚BIBLIOTECA SOULMIA📚🍸</h1>
     </div>
 
     <div class="searchBar">
-        <input type="text" placeholder="Buscar">
+        <input type="text" id="searchInput" placeholder="Buscar" onkeyup="searchFunction()">
     </div>
     
         <img class="logo" src="../sources/LOGO SOULMIA DEFINITIVO_Mesa de trabajo 1.jpg" alt="Logo Soulmia">
@@ -45,7 +45,7 @@
                 </span>
                 <div id="profileMenuContent" class="profileMenuContent">
                     <a href="./login.html" aria-label="Ir a Login">Login</a>
-                    <a href="./registro.html" aria-label="Ir a Registro">Registro</a>
+                    <a href="./index.html" id="logoutBtn" aria-label="Ir a logout">logout</a>
                 </div>
             </div>
         </div>
@@ -55,15 +55,17 @@
     <h2 class="biblioteca">BIBLIOTECA</h2>
     <br>
     <div class="divContentTitles">
-        <div class="grid-container">
+        <div class="grid-container" id="contentContainer">
             <!-- Columna de PDFs -->
-        <div class="column pdfs-column">
+     <!--    <div class="column pdfs-column">
             <h1 class="pdfTitle">PDFS</h1>
             <div class="row">
-                <img class="imgsColumns" src="path/to/pdf-image1.jpg" alt="pdf">
+                <img class="imgsColumns" src="../sources/mixmolecular.jpg" alt="pdf">
                 <p>Introducción a la Mixología</p>
                 <div class="icons">
-                    <i class="fas fa-download"></i>
+                    <a href="../sources/1862theBarTendersGuide.pdf" download="1862theBarTendersGuide" class="download-btn">
+                        <i class="fas fa-download"></i>
+                    </a>
                     <i class="fas fa-book"></i>
                 </div>
             </div>
@@ -115,9 +117,9 @@
                     <i class="fas fa-book"></i>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Columna de Podcasts -->
-        <div class="column podcast-column">
+<!--         <div class="column podcast-column">
             <h1 class="pdfTitle">PODCASTS</h1>
             <div class="row">
                 <img class="imgsColumns" src="path/to/podcast-image1.jpg" alt="Podcast">
@@ -137,7 +139,7 @@
             </div>
             <div class="row">
                 <img class="imgsColumns" src="path/to/podcast-image1.jpg" alt="Podcast">
-                <p>Grandes Maestros</p>
+                <p>Flair Bartending Latam</p>
                 <div class="icons">
                     <i class="fas fa-play"></i>
                     <i class="fas fa-pause"></i>
@@ -153,7 +155,7 @@
             </div>
             <div class="row">
                 <img class="imgsColumns" src="path/to/podcast-image1.jpg" alt="Podcast">
-                <p>Maestros Destiladores</p>
+                <p>La Cerveza Artesanal en Latinoamerica</p>
                 <div class="icons">
                     <i class="fas fa-play"></i>
                     <i class="fas fa-pause"></i>
@@ -161,7 +163,7 @@
             </div>
             <div class="row">
                 <img class="imgsColumns" src="path/to/podcast-image1.jpg" alt="Podcast">
-                <p>Maestros Destiladores</p>
+                <p>Cocteleria Tiki en Colombia</p>
                 <div class="icons">
                     <i class="fas fa-play"></i>
                     <i class="fas fa-pause"></i>
@@ -169,13 +171,13 @@
             </div>
             <div class="row">
                 <img class="imgsColumns" src="path/to/podcast-image1.jpg" alt="Podcast">
-                <p>Maestros Destiladores</p>
+                <p>Los Cocteles del Amor</p>
                 <div class="icons">
                     <i class="fas fa-play"></i>
                     <i class="fas fa-pause"></i>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
 
@@ -211,5 +213,6 @@
     </div>
 </footer>
 <script src="../js/biblioteca.js"></script>
+<script src="../js/bdbiblioteca.js"></script>
 </body>
 </html>
